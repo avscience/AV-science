@@ -2,36 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>AV Science – invent, test, teach</title>
+  <title>Projects & Tutorials – AV Science</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Independent startup lab inventing new tech & sharing DIY guides" />
+  <meta name="description" content="Hands‑on projects you can replicate and tutorials to get you started" />
   <link rel="stylesheet" href="style.css" />
+  <!-- Page‑specific styles → keeps main stylesheet untouched -->
+  <style>
+    .project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;margin-top:1rem}
+    .project-card{border:1px solid #ddd;border-radius:8px;overflow:hidden;text-align:center;background:#fafafa;transition:transform .15s ease}
+    .project-card:hover{transform:translateY(-4px)}
+    .project-card img{width:100%;height:160px;object-fit:cover}
+    .project-card h3{margin:0.8rem 0;font-size:1.1rem;color:#111}
+    .project-card p{padding:0 0.8rem 1rem;font-size:0.9rem;color:#555}
+    .project-card a{display:block;color:inherit;text-decoration:none}
+  </style>
 </head>
-
 <body>
   <header>
-    <h1>AV Science</h1>
-    <p class="tagline">Invent • Test • Teach</p>
-
+    <h1>Projects & Tutorials</h1>
     <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="projects.html">Projects & Tutorials</a>
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active">Projects & Tutorials</a>
     </nav>
   </header>
 
   <main>
-    <section id="future-projects">
-      <h2>Future projects (2025‑2026 roadmap)</h2>
-      <ul>
-        <li><strong>Compact Ostwald‑process nitric‑acid reactor</strong> — turning ammonia distilled from urine into HNO<sub>3</sub></li>
-        <li><strong>Pee‑to‑ammonia electrolyzer</strong> — decentralized Haber‑Bosch alternative for on‑site fertilizer</li>
-        <li><strong>Low‑temperature plasma sterilizer</strong> — field unit for medical kit decontamination</li>
-      </ul>
+    <h2>Some projects you can try</h2>
+
+    <section class="project-grid">
+      <!-- === Project 1 === -->
+      <article class="project-card">
+        <a href="tutorials/ostwald-nitric.html">
+          <img src="img/ostwald-reactor.jpg" alt="Compact Ostwald nitric‑acid reactor" />
+          <h3>Compact Ostwald Nitric‑Acid Reactor</h3>
+          <p>Convert household ammonia into 50‑70 % HNO₃ with platinum gauze & precise temp control.</p>
+        </a>
+      </article>
+      
+      <!-- === Project 2 === -->
+      <article class="project-card">
+        <a href="tutorials/pee-to-ammonia.html">
+          <img src="img/pee-to-ammonia.jpg" alt="Pee‑to‑ammonia electrolyzer" />
+          <h3>Pee‑to‑Ammonia Electrolyzer</h3>
+          <p>Distil urea from urine, then electrolytically crack it into NH₃ for closed‑loop fertilizer.</p>
+        </a>
+      </article>
+
+      <!-- === Project 3 === -->
+      <article class="project-card">
+        <a href="tutorials/plasma-sterilizer.html">
+          <img src="img/plasma-sterilizer.jpg" alt="Low‑temperature plasma sterilizer" />
+          <h3>Low‑Temperature Plasma Sterilizer</h3>
+          <p>Build a portable argon‑plasma unit that sterilises medical tools without heat.</p>
+        </a>
+      </article>
     </section>
 
-    <section id="about">
-      <h2>About me</h2>
-      <p>I am an independent R&amp;D engineer based in Morocco, building open hardware so anyone can explore chemistry, materials, and propulsion safely at home or in the classroom.</p>
+    <!-- =========  FULL TUTORIAL LIST  ========= -->
+    <section id="tutorials" style="margin-top:3rem">
+      <h2>All Tutorials</h2>
+      <ul>
+        <li><a href="tutorials/how-to-etch-pcb.html">How to etch a PCB at home</a></li>
+        <li><a href="tutorials/ostwald-nitric.html">Compact Ostwald nitric‑acid reactor</a></li>
+        <li><a href="tutorials/pee-to-ammonia.html">Pee‑to‑ammonia electrolyzer</a></li>
+        <li><a href="tutorials/plasma-sterilizer.html">Low‑temperature plasma sterilizer</a></li>
+      </ul>
     </section>
   </main>
 
