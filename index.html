@@ -18,6 +18,9 @@
     .modal{position:fixed;inset:0;display:none;backdrop-filter:blur(4px);background:rgba(0,0,0,.6);align-items:center;justify-content:center;z-index:1000}
     .modal-content{background:#fff;padding:1.5rem;max-width:640px;max-height:90vh;overflow:auto;border-radius:12px;position:relative}
     .modal-close{position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.6rem;cursor:pointer}
+    .center-link{text-align:center;margin-top:3rem}
+    .center-link a{background:#0a7;color:#fff;text-decoration:none;padding:0.8rem 1.6rem;border-radius:8px;font-weight:600;display:inline-block}
+    .center-link a:hover{background:#0c9}
   </style>
 </head>
 <body>
@@ -56,18 +59,17 @@
         <h3>Make Potassium Nitrate</h3>
         <div class="overlay">Click to learn more →</div>
       </div>
+
+      <div class="project-card" data-title="DIY Induction Heater" data-desc="Build a compact high-frequency induction heater using a ZVS driver, ferrite core, and copper coil. Great for heating bolts, nails, or glass for thermal experiments." data-link="tutorials/induction-heater.html">
+        <img src="img/induction-heater.jpg" alt="DIY induction heater" />
+        <h3>Make an Induction Heater</h3>
+        <div class="overlay">Click to learn more →</div>
+      </div>
     </section>
 
-    <section id="tutorials" style="margin-top:3rem">
-      <h2>All Tutorials</h2>
-      <ul>
-        <li><a href="tutorials/ostwald-nitric.html">Compact Ostwald nitric-acid reactor</a></li>
-        <li><a href="tutorials/ammonia-synthesis.html">Small-scale ammonia synthesis</a></li>
-        <li><a href="tutorials/plasma-sterilizer.html">Low-temperature plasma sterilizer</a></li>
-        <li><a href="tutorials/potassium-nitrate.html">Potassium nitrate from fertilizer</a></li>
-        <li><a href="tutorials/how-to-etch-pcb.html">How to etch a PCB at home</a></li>
-      </ul>
-    </section>
+    <div class="center-link">
+      <a href="tutorials.html">View All Tutorials →</a>
+    </div>
   </main>
 
   <div class="modal" id="projectModal">
