@@ -9,6 +9,7 @@
   --teal-dark: #005d63;
   --yellow: #f3b63f;
   --blue: #2b6cb0;
+  --red: #c63c35;
   --shadow: 0 18px 45px rgba(22, 33, 43, 0.13);
 }
 
@@ -192,6 +193,11 @@ h3 {
   color: var(--teal-dark);
   background: rgba(255, 255, 255, 0.82);
   border-color: var(--line);
+}
+
+.button.youtube {
+  color: #fff;
+  background: var(--red);
 }
 
 .stats {
@@ -388,6 +394,13 @@ h3 {
   max-width: 920px;
 }
 
+.page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
 .project-detail-list {
   display: grid;
   gap: 28px;
@@ -437,6 +450,37 @@ h3 {
 
 .mini-panel h4 {
   margin: 0 0 8px;
+}
+
+.step-panel {
+  padding: 18px;
+  border: 1px solid #cfe1e7;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #f7fcfc, #ffffff);
+}
+
+.step-panel h4 {
+  margin: 0 0 12px;
+}
+
+.step-list {
+  display: grid;
+  gap: 10px;
+  padding-left: 22px;
+}
+
+.step-list li {
+  margin: 0;
+}
+
+.safety-note {
+  margin-top: 16px !important;
+  padding: 12px 14px;
+  border-left: 4px solid var(--yellow);
+  border-radius: 6px;
+  color: #4b3a18;
+  background: #fff7e5;
+  font-weight: 750;
 }
 
 li {
@@ -508,7 +552,9 @@ li {
   }
 
   .hero-actions,
-  .hero-actions .button {
+  .page-actions,
+  .hero-actions .button,
+  .page-actions .button {
     width: 100%;
   }
 
