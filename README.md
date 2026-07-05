@@ -1,25 +1,21 @@
 # AV Science
 
 AV Science is a static GitHub Pages site for science project overviews,
-tutorial planning, photos, safety notes, and learning goals.
+tutorial planning, project media, safety notes, and learning goals.
+
+Made by Andrej Visnjic.
 
 ## Site Structure
 
 - `index.html` - home page and featured project cards
 - `projects.html` - detailed project library
 - `style.css` - responsive design and shared components
-- `img/` - recommended folder for your own project photos
+- `img/` - project media folder
 
-## Use Your Own Photos
+## Project Media
 
-Each project card has a clickable photo link. Right now the site uses external
-placeholder photos so the page looks finished immediately.
-
-To use your own images:
-
-1. Upload your files into `img/`.
-2. Update both the `src` and `href` on the matching project photo link.
-3. Use clear horizontal or square photos, ideally at least 1200 pixels wide.
+Each project card has a clickable photo link connected to a project-relevant
+reference image. Media can be updated later without changing the page layout.
 
 Suggested filenames:
 
