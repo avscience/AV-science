@@ -1,51 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Projects & Tutorials – AV Science</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="All open-source projects and step-by-step tutorials from AV Science" />
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Detailed AV Science project library with photos, safety notes, learning goals, and project planning guidance."
+    />
+    <title>Projects | AV Science</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="AV Science home">
+        <span class="brand-mark">AV</span>
+        <span>AV Science</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="index.html#method">Method</a>
+        <a href="index.html#safety">Safety</a>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <h1>Projects & Tutorials</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html" class="active">Projects & Tutorials</a>
-    </nav>
-  </header>
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-inner">
+          <p class="eyebrow">Project library</p>
+          <h1>Projects</h1>
+          <p>
+            These pages are designed to look finished now and grow as you add
+            your own build photos, measurements, diagrams, and final results.
+            Advanced topics are kept as safety-first educational overviews.
+          </p>
+        </div>
+      </section>
 
-  <main>
-    <!-- =========  PROJECTS  ========= -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>Duplicate the <code>&lt;article class="project"&gt;</code> block for each new build.</p>
+      <section class="section">
+        <div class="project-detail-list">
+          <article class="project-detail" id="birkeland-eyde">
+            <a
+              class="project-photo"
+              href="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&w=1600&q=90"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&w=1200&q=80"
+                alt="A polished science and engineering workspace."
+              />
+              <span>Open photo</span>
+            </a>
+            <div class="detail-content">
+              <div class="project-meta">
+                <span>Chemistry</span>
+                <span>Advanced overview</span>
+              </div>
+              <h2>Birkeland-Eyde Reactor</h2>
+              <p>
+                This project page introduces the historical idea of fixing
+                nitrogen from air using electrical energy. Keep this as a
+                theory, history, and design-review topic unless you have
+                qualified supervision and professional safety controls.
+              </p>
+              <div class="detail-columns">
+                <div class="mini-panel">
+                  <h4>Learn</h4>
+                  <ul>
+                    <li>Why nitrogen fixation matters</li>
+                    <li>How plasma changes reaction conditions</li>
+                    <li>Why gas handling and ventilation are critical</li>
+                  </ul>
+                </div>
+                <div class="mini-panel">
+                  <h4>Add Next</h4>
+                  <ul>
+                    <li>Your own project photo</li>
+                    <li>Non-operational diagram</li>
+                    <li>Safety review checklist</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
 
-      <article class="project">
-        <h3>Title goes here</h3>
-        <p class="status">Status: <em>In progress</em></p>
-        <p>Short description…</p>
-        <p><a href="docs/project-title.pdf">Read the build guide (PDF)</a></p>
-      </article>
+          <article class="project-detail" id="ammonia">
+            <a
+              class="project-photo"
+              href="https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=1600&q=90"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=1200&q=80"
+                alt="A laboratory bench with chemistry glassware."
+              />
+              <span>Open photo</span>
+            </a>
+            <div class="detail-content">
+              <div class="project-meta">
+                <span>Chemistry</span>
+                <span>Research topic</span>
+              </div>
+              <h2>Ammonia Synthesis</h2>
+              <p>
+                A research-style overview of how ammonia is made industrially
+                and why pressure, catalysts, and temperature change the outcome.
+                This page should not become a home synthesis recipe.
+              </p>
+              <div class="detail-columns">
+                <div class="mini-panel">
+                  <h4>Learn</h4>
+                  <ul>
+                    <li>Reaction equilibrium</li>
+                    <li>Industrial catalyst concepts</li>
+                    <li>Why gases and pressure need expert controls</li>
+                  </ul>
+                </div>
+                <div class="mini-panel">
+                  <h4>Safe Direction</h4>
+                  <ul>
+                    <li>Add a history timeline</li>
+                    <li>Compare industrial process diagrams</li>
+                    <li>Include a glossary of key terms</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
 
-      <!-- more projects … -->
-    </section>
+          <article class="project-detail" id="potassium-nitrate">
+            <a
+              class="project-photo"
+              href="https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&w=1600&q=90"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&w=1200&q=80"
+                alt="Laboratory glassware arranged for a chemistry demonstration."
+              />
+              <span>Open photo</span>
+            </a>
+            <div class="detail-content">
+              <div class="project-meta">
+                <span>Chemistry</span>
+                <span>Purification concepts</span>
+              </div>
+              <h2>Potassium Nitrate Concepts</h2>
+              <p>
+                A safer project page can teach solubility, crystallization,
+                filtration, and responsible chemical storage without giving
+                unsafe instructions for making or using oxidizers.
+              </p>
+              <div class="detail-columns">
+                <div class="mini-panel">
+                  <h4>Learn</h4>
+                  <ul>
+                    <li>Solubility and temperature</li>
+                    <li>Crystal formation</li>
+                    <li>Filtration and purity</li>
+                  </ul>
+                </div>
+                <div class="mini-panel">
+                  <h4>Safer Alternative</h4>
+                  <ul>
+                    <li>Grow table-salt crystals</li>
+                    <li>Compare sugar crystal shapes</li>
+                    <li>Photograph crystal growth over time</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
 
-    <!-- =========  TUTORIALS  ========= -->
-    <section id="tutorials">
-      <h2>Tutorials</h2>
-      <p>Write tutorials in Markdown inside <code>/tutorials/</code> and link them here.</p>
-      <ul>
-        <li><a href="tutorials/how-to-etch-pcb.html">How to etch a PCB at home</a></li>
-        <!-- more tutorials … -->
-      </ul>
-    </section>
-  </main>
+          <article class="project-detail" id="induction-heater">
+            <a
+              class="project-photo"
+              href="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=90"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+                alt="Close-up of an electronics circuit board."
+              />
+              <span>Open photo</span>
+            </a>
+            <div class="detail-content">
+              <div class="project-meta">
+                <span>Electronics</span>
+                <span>Build planning</span>
+              </div>
+              <h2>Induction Heater</h2>
+              <p>
+                This page frames the induction heater as an electronics design
+                and safety-planning project. It should include power limits,
+                insulation, heat risk, and supervision before any build notes.
+              </p>
+              <div class="detail-columns">
+                <div class="mini-panel">
+                  <h4>Learn</h4>
+                  <ul>
+                    <li>Magnetic fields and eddy currents</li>
+                    <li>Switching circuits and coils</li>
+                    <li>Thermal and electrical safety</li>
+                  </ul>
+                </div>
+                <div class="mini-panel">
+                  <h4>Add Next</h4>
+                  <ul>
+                    <li>Parts photo</li>
+                    <li>Risk checklist</li>
+                    <li>Low-voltage starter demo</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
 
-  <footer>
-    <p>&copy; 2025 AV Science</p>
-  </footer>
-</body>
+        <div class="photo-note">
+          <p>
+            Want your own photos here? Send them with labels like
+            "Birkeland-Eyde", "ammonia", "potassium nitrate", "induction
+            heater", or "hero image" and they can replace these placeholders.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>AV Science</p>
+      <p>Projects, photos, and safety-first notes.</p>
+    </footer>
+  </body>
 </html>
